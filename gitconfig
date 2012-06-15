@@ -1,0 +1,17 @@
+[user]
+	name = Jesper Louis Andersen
+	email = jesper.louis.andersen@gmail.com
+[color]
+	ui = true
+[rerere]
+	enabled = true
+[alias]
+        st = status -s
+        log-graph = log --all --graph --decorate
+        log-refs = log --all --graph --decorate --oneline --simplify-by-decoration --no-merges
+        log-timeline = log --format='%h %an %ar - %s'
+        log-local = log --oneline origin..HEAD
+        log-fetched = log --oneline HEAD..origin/master
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+[rebase]
+	autosquash = true
